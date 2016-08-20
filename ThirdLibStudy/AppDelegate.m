@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SDImageStudy.h"
+#import "StuZipLib.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window.rootViewController = [[SDImageStudy alloc] init];
+    
     return YES;
 }
 

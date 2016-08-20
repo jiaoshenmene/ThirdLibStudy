@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SDImageStudy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>StuZipLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>ThirdLibStudy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>A143F74A1D4CA22D00F0018D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A143F7601D4CA3B400F0018D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A17120F71D51A50E00DE6F83</key>
 		<dict>
 			<key>primary</key>
 			<true/>
