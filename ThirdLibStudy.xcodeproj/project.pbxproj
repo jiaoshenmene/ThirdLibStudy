@@ -49,6 +49,15 @@
 		A171211E1D55C0FA00DE6F83 /* UIImage+stuGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A171211C1D55C0FA00DE6F83 /* UIImage+stuGIF.m */; };
 		A17121211D55CA9A00DE6F83 /* StuWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = A17121201D55CA9A00DE6F83 /* StuWebImageCompat.m */; };
 		A17121221D55CA9A00DE6F83 /* StuWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = A17121201D55CA9A00DE6F83 /* StuWebImageCompat.m */; };
+		A17387041D7BBA9300A37840 /* BlockStudyLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A17387031D7BBA9300A37840 /* BlockStudyLib.h */; };
+		A17387061D7BBA9300A37840 /* BlockStudyLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A17387051D7BBA9300A37840 /* BlockStudyLib.m */; };
+		A173870A1D7BBABC00A37840 /* BlockStudyLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A17387051D7BBA9300A37840 /* BlockStudyLib.m */; };
+		A17387121D7C028800A37840 /* URLStudy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A17387111D7C028800A37840 /* URLStudy.h */; };
+		A17387141D7C028800A37840 /* URLStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = A17387131D7C028800A37840 /* URLStudy.m */; };
+		A173871A1D7C02A300A37840 /* URLSwiftStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17387191D7C02A300A37840 /* URLSwiftStudy.swift */; };
+		A173871B1D7C02B500A37840 /* URLSwiftStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17387191D7C02A300A37840 /* URLSwiftStudy.swift */; };
+		A173871E1D7C056500A37840 /* SwiftStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A173871D1D7C056500A37840 /* SwiftStudy.swift */; };
+		A17387611D7C0E4100A37840 /* URLStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = A17387131D7C028800A37840 /* URLStudy.m */; };
 		A3E7C8FB805BAF64CE3C1198 /* libPods-ThirdLibStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED9FF54885E0F7CB6D714B1 /* libPods-ThirdLibStudy.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +96,26 @@
 			dstSubfolderSpec = 16;
 			files = (
 				A17120FB1D51A50E00DE6F83 /* StuZipLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17386FF1D7BBA9300A37840 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A17387121D7C028800A37840 /* URLStudy.h in CopyFiles */,
+				A17387041D7BBA9300A37840 /* BlockStudyLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A173870D1D7C028800A37840 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +176,15 @@
 		A171211C1D55C0FA00DE6F83 /* UIImage+stuGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+stuGIF.m"; sourceTree = "<group>"; };
 		A171211F1D55CA9A00DE6F83 /* StuWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuWebImageCompat.h; sourceTree = "<group>"; };
 		A17121201D55CA9A00DE6F83 /* StuWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuWebImageCompat.m; sourceTree = "<group>"; };
+		A17387011D7BBA9300A37840 /* libBlockStudyLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBlockStudyLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17387031D7BBA9300A37840 /* BlockStudyLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStudyLib.h; sourceTree = "<group>"; };
+		A17387051D7BBA9300A37840 /* BlockStudyLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStudyLib.m; sourceTree = "<group>"; };
+		A173870F1D7C028800A37840 /* libURLStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libURLStudy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17387111D7C028800A37840 /* URLStudy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLStudy.h; sourceTree = "<group>"; };
+		A17387131D7C028800A37840 /* URLStudy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLStudy.m; sourceTree = "<group>"; };
+		A17387191D7C02A300A37840 /* URLSwiftStudy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSwiftStudy.swift; sourceTree = "<group>"; };
+		A173871C1D7C038D00A37840 /* URLStudy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "URLStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		A173871D1D7C056500A37840 /* SwiftStudy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStudy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +224,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A17386FE1D7BBA9300A37840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A173870C1D7C028800A37840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -214,6 +266,8 @@
 				A143F74E1D4CA22D00F0018D /* ThirdLibStudyUITests */,
 				A143F7621D4CA3B400F0018D /* SDImageStudy */,
 				A17120F91D51A50E00DE6F83 /* StuZipLib */,
+				A17387021D7BBA9300A37840 /* BlockStudyLib */,
+				A17387101D7C028800A37840 /* URLStudy */,
 				A143F7281D4CA22D00F0018D /* Products */,
 				96F1C86277C53FB959813E00 /* Pods */,
 				9F26B4DBB848E827EB3EB8EA /* Frameworks */,
@@ -228,6 +282,8 @@
 				A143F74B1D4CA22D00F0018D /* ThirdLibStudyUITests.xctest */,
 				A143F7611D4CA3B400F0018D /* libSDImageStudy.a */,
 				A17120F81D51A50E00DE6F83 /* libStuZipLib.a */,
+				A17387011D7BBA9300A37840 /* libBlockStudyLib.a */,
+				A173870F1D7C028800A37840 /* libURLStudy.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +295,7 @@
 				A143F72E1D4CA22D00F0018D /* AppDelegate.m */,
 				A143F7301D4CA22D00F0018D /* ViewController.h */,
 				A143F7311D4CA22D00F0018D /* ViewController.m */,
+				A173871D1D7C056500A37840 /* SwiftStudy.swift */,
 				A17121011D51CD6200DE6F83 /* qwerty_key_pop_p@2x.png */,
 				A17121041D51CF7E00DE6F83 /* longpressview_focus@2x.png */,
 				A16932C11D60308800ECA697 /* fff.png */,
@@ -337,6 +394,26 @@
 			path = StuZipLib;
 			sourceTree = "<group>";
 		};
+		A17387021D7BBA9300A37840 /* BlockStudyLib */ = {
+			isa = PBXGroup;
+			children = (
+				A17387031D7BBA9300A37840 /* BlockStudyLib.h */,
+				A17387051D7BBA9300A37840 /* BlockStudyLib.m */,
+			);
+			path = BlockStudyLib;
+			sourceTree = "<group>";
+		};
+		A17387101D7C028800A37840 /* URLStudy */ = {
+			isa = PBXGroup;
+			children = (
+				A17387111D7C028800A37840 /* URLStudy.h */,
+				A17387131D7C028800A37840 /* URLStudy.m */,
+				A17387191D7C02A300A37840 /* URLSwiftStudy.swift */,
+				A173871C1D7C038D00A37840 /* URLStudy-Bridging-Header.h */,
+			);
+			path = URLStudy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -430,6 +507,40 @@
 			productReference = A17120F81D51A50E00DE6F83 /* libStuZipLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A17387001D7BBA9300A37840 /* BlockStudyLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17387091D7BBA9300A37840 /* Build configuration list for PBXNativeTarget "BlockStudyLib" */;
+			buildPhases = (
+				A17386FD1D7BBA9300A37840 /* Sources */,
+				A17386FE1D7BBA9300A37840 /* Frameworks */,
+				A17386FF1D7BBA9300A37840 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockStudyLib;
+			productName = BlockStudyLib;
+			productReference = A17387011D7BBA9300A37840 /* libBlockStudyLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A173870E1D7C028800A37840 /* URLStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17387151D7C028800A37840 /* Build configuration list for PBXNativeTarget "URLStudy" */;
+			buildPhases = (
+				A173870B1D7C028800A37840 /* Sources */,
+				A173870C1D7C028800A37840 /* Frameworks */,
+				A173870D1D7C028800A37840 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URLStudy;
+			productName = URLStudy;
+			productReference = A173870F1D7C028800A37840 /* libURLStudy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -461,6 +572,14 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = WRM5754N86;
 					};
+					A17387001D7BBA9300A37840 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WRM5754N86;
+					};
+					A173870E1D7C028800A37840 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WRM5754N86;
+					};
 				};
 			};
 			buildConfigurationList = A143F7221D4CA22D00F0018D /* Build configuration list for PBXProject "ThirdLibStudy" */;
@@ -481,6 +600,8 @@
 				A143F74A1D4CA22D00F0018D /* ThirdLibStudyUITests */,
 				A143F7601D4CA3B400F0018D /* SDImageStudy */,
 				A17120F71D51A50E00DE6F83 /* StuZipLib */,
+				A17387001D7BBA9300A37840 /* BlockStudyLib */,
+				A173870E1D7C028800A37840 /* URLStudy */,
 			);
 		};
 /* End PBXProject section */
@@ -576,9 +697,13 @@
 				A17121191D55AF6400DE6F83 /* UIImage+Stu_MultiFormat.m in Sources */,
 				A16932CE1D604E7800ECA697 /* StuWebImageDownloader.m in Sources */,
 				A143F7321D4CA22D00F0018D /* ViewController.m in Sources */,
+				A17387611D7C0E4100A37840 /* URLStudy.m in Sources */,
+				A173871E1D7C056500A37840 /* SwiftStudy.swift in Sources */,
 				A143F77C1D4DD7FE00F0018D /* StuImageCache.m in Sources */,
 				A143F72F1D4CA22D00F0018D /* AppDelegate.m in Sources */,
+				A173871B1D7C02B500A37840 /* URLSwiftStudy.swift in Sources */,
 				A16932C91D6049D300ECA697 /* StuWebImageManager.m in Sources */,
+				A173870A1D7BBABC00A37840 /* BlockStudyLib.m in Sources */,
 				A171211D1D55C0FA00DE6F83 /* UIImage+stuGIF.m in Sources */,
 				A17121031D51CDC500DE6F83 /* StuZipLib.m in Sources */,
 				A16932C51D6031FF00ECA697 /* UIImage+StuForceDecode.m in Sources */,
@@ -630,6 +755,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A17120FD1D51A50E00DE6F83 /* StuZipLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17386FD1D7BBA9300A37840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17387061D7BBA9300A37840 /* BlockStudyLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A173870B1D7C028800A37840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17387141D7C028800A37840 /* URLStudy.m in Sources */,
+				A173871A1D7C02A300A37840 /* URLSwiftStudy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +1000,49 @@
 			};
 			name = Release;
 		};
+		A17387071D7BBA9300A37840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A17387081D7BBA9300A37840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A17387161D7C028800A37840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "URLStudy/URLStudy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A17387171D7C028800A37840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "URLStudy/URLStudy-Bridging-Header.h";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -914,6 +1099,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A17387091D7BBA9300A37840 /* Build configuration list for PBXNativeTarget "BlockStudyLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17387071D7BBA9300A37840 /* Debug */,
+				A17387081D7BBA9300A37840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A17387151D7C028800A37840 /* Build configuration list for PBXNativeTarget "URLStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17387161D7C028800A37840 /* Debug */,
+				A17387171D7C028800A37840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

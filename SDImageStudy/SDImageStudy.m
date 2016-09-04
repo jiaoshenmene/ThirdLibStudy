@@ -36,13 +36,53 @@
 {
     [super viewDidLoad];
     
+    
+    
+    
+    
+    
+    
+    
+    
 //    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fff" ofType:@"png"]];
 //////    StuImageCache *cache = [StuImageCache getInstance];
 //////    [cache storeImageDataToDisk:data forKey:@"te12.jpg"];
 //    UIImage *image = [UIImage stu_imageWithData:data];
 //    
 //    image = [UIImage stuDecodedImageWithImage:image];
-//    
+    
+    /*
+     
+     */
+    NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] objectAtIndex:0];
+    
+    NSURL *newUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@123.png",url ]];
+//    [data writeToURL:newUrl atomically:YES];
+    
+    NSURL *referenceURL = newUrl.fileReferenceURL;
+    
+    NSURL *toURl = [NSURL URLWithString:[NSString stringWithFormat:@"%@/1235.png",url ]];
+    
+    
+    NSURL *bookmarkUrl =  [NSURL URLWithString:[NSString stringWithFormat:@"%@/987.png",url ]];
+//    [[NSFileManager defaultManager] moveItemAtURL:referenceURL toURL:toURl error:nil];
+    
+
+    
+    NSLog(@"%@",url);
+    NSLog(@"newUrl = %@",newUrl);
+    NSData *data1 = [toURl bookmarkDataWithOptions:NSURLBookmarkCreationSuitableForBookmarkFile includingResourceValuesForKeys:nil relativeToURL:nil error:nil];
+    [NSURL writeBookmarkData:data1 toURL:bookmarkUrl options:0 error:nil];
+    
+    
+    NSURL *newBookmarkUrl = [NSURL URLByResolvingBookmarkData:data1 options:NSURLBookmarkResolutionWithoutUI relativeToURL:nil bookmarkDataIsStale:nil error:nil];
+
+    
+    UIImage *newImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:newBookmarkUrl options:NSDataReadingMappedIfSafe error:nil]];
+    UIImage *newImage1 = [UIImage imageWithData:data1];
+    
+    
+//
 //
 //    
 ////    StuImageCache *cache = [StuImageCache getInstance];
@@ -50,9 +90,9 @@
 //    UIImage *image = [[UIImage alloc] init];//[cache diskImageForKey:@"gifdemo@2x.gif"];
 ////
 ////    [image sd_study_setImageWithUR];
-//    UIImageView *imageview = [[UIImageView alloc] initWithImage:image];
-//    imageview.frame = CGRectMake(10, 10, 100, 100);
-//    [self.view addSubview:imageview];
+    UIImageView *imageview = [[UIImageView alloc] initWithImage:newImage];
+    imageview.frame = CGRectMake(10, 10, 100, 100);
+    [self.view addSubview:imageview];
 //
 ////
 //    [imageview sd_study_setImageWithURL:[NSURL URLWithString:@"https://s3.amazonaws.com/fast-image-cache/demo-images/FICDDemoImage001.jpg"] placeholderImage:nil options:0];
@@ -62,12 +102,12 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    StuWebImageDownloader *downloader = [[StuWebImageDownloader alloc] init];
-    [downloader downloadImageWithURL:[NSURL URLWithString:@"https://s3.amazonaws.com/fast-image-cache/demo-images/FICDDemoImage001.jpg"] options:StuWebImageDownloaderLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-        
-    } completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
-        
-    }];
+//    StuWebImageDownloader *downloader = [[StuWebImageDownloader alloc] init];
+//    [downloader downloadImageWithURL:[NSURL URLWithString:@"https://s3.amazonaws.com/fast-image-cache/demo-images/FICDDemoImage001.jpg"] options:StuWebImageDownloaderLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+//        
+//    } completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+//        
+//    }];
     
     // HTTP NTLM auth example
     // Add your NTLM image url to the array below and replace the credentials

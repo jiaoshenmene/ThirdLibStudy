@@ -12,6 +12,13 @@
 
 
 @interface StuWebImageDownloaderOperation : NSOperation <StuWebImageOperation>
+
+@property (nonatomic , assign) BOOL shouldDecompressImages;
+
+
+
+
+
 - (id) initWithRequest:(NSURLRequest *)request
                options:(StuWebImageDownloaderOptions)options
               progress:(StuWebImageDownloaderProgressBlock)progress

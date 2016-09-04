@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BlockStudyLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>SDImageStudy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>URLStudy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -43,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>A17120F71D51A50E00DE6F83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A17387001D7BBA9300A37840</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A173870E1D7C028800A37840</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -11,7 +11,13 @@
 #import "StuWebImageDownloaderOperation.h"
 
 
+@interface StuWebImageDownloader()
 
+@property (nonatomic , strong) NSOperationQueue *downloadQueue;
+@property (nonatomic , assign) Class operationClass;
+@property (nonatomic , strong) NSMutableDictionary *HTTPHeaders;
+
+@end
 
 @implementation StuWebImageDownloader
 
@@ -29,6 +35,14 @@
 - (id) init
 {
     if (self = [super init]) {
+        
+        _operationClass = [StuWebImageDownloaderOperation class];
+        _shouldDecompressImages = YES;
+        _downloadQueue = [NSOperationQueue new];
+        _downloadQueue.maxConcurrentOperationCount = 6;
+        
+        _HTTPHeaders = [@{@"Accept": @"image/*;q=0.8"} mutableCopy];
+        
         _downloadTimeout = 15.0f;
         
     }
@@ -37,7 +51,7 @@
 
 - (id<StuWebImageOperation>)downloadImageWithURL:(NSURL *)url options:(StuWebImageDownloaderOptions)options progress:(StuWebImageDownloaderProgressBlock)progressBlock completed:(StuWebImageDownloaderCompletedBlock)completedBlock{
     
-    __block StuWebImageDownloaderOptions *operation;
+    __block StuWebImageDownloaderOperation *operation;
     __weak __typeof(self)wself = self;
     
     
@@ -47,14 +61,37 @@
             timeoutInterval = 15.0;
         }
         
-        //In order to prevent from potential duplicate caching (NSURLCache + SDImageCache) we disable
+        //In order to prevent from potential duplicate caching (NSURLCache + SDImageCache) we disable the cache for image requests if told otherwise
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:(options & StuWebImageDownloaderUseNSURLCache ? NSURLRequestUseProtocolCachePolicy : NSURLRequestReloadIgnoringCacheData) timeoutInterval:timeoutInterval];
+        
+        request.HTTPShouldHandleCookies = (options & StuWebImageDownloaderHandleCookies);
+        request.HTTPShouldUsePipelining = YES;
+        if (wself.headersFilter) {
+//            request.allHTTPHeaderFields = wself.headersFilter(url , [wself.htt]);
+        }else{
+            request.allHTTPHeaderFields = wself.HTTPHeaders;
+        }
+        
+        operation = [[wself.operationClass alloc] initWithRequest:request options:options progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+            
+        } completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+            
+            
+        } cancelled:^{
+            
+        }];
+        operation.shouldDecompressImages = wself.shouldDecompressImages;
+        
+        
+        
+        [wself.downloadQueue addOperation:operation];
         
         NSLog(@"createCallback");
     }];
     
     
     
-    return nil;
+    return operation;
 }
 
 - (void)addProgressCallback:(StuWebImageDownloaderProgressBlock)progressBlock completedBlock:(StuWebImageDownloaderCompletedBlock)completedBlock forURL:(NSURL *)url createCallback:(StuWebImageNoParamsBlock)createCallback{
