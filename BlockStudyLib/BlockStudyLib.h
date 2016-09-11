@@ -10,5 +10,5 @@
 
 @interface BlockStudyLib : NSObject
 + (void) startBlock;
-
+- (void) startMethod;
 @end

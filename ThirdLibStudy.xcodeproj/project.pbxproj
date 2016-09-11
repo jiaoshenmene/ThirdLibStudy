@@ -25,6 +25,10 @@
 		A143F77C1D4DD7FE00F0018D /* StuImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A143F77B1D4DD7FE00F0018D /* StuImageCache.m */; };
 		A143F77D1D4DD7FE00F0018D /* StuImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A143F77B1D4DD7FE00F0018D /* StuImageCache.m */; };
 		A143F77F1D4DF05100F0018D /* te12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A143F77E1D4DF05100F0018D /* te12.jpg */; };
+		A157A2761D85255E00C22CE2 /* WeakStrongStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = A157A2751D85255E00C22CE2 /* WeakStrongStudy.m */; };
+		A157A2771D85255E00C22CE2 /* WeakStrongStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = A157A2751D85255E00C22CE2 /* WeakStrongStudy.m */; };
+		A157A27F1D85340F00C22CE2 /* AFNStudy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A157A27E1D85340F00C22CE2 /* AFNStudy.h */; };
+		A157A2811D85340F00C22CE2 /* AFNStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = A157A2801D85340F00C22CE2 /* AFNStudy.m */; };
 		A16932C21D60308800ECA697 /* fff.png in Resources */ = {isa = PBXBuildFile; fileRef = A16932C11D60308800ECA697 /* fff.png */; };
 		A16932C51D6031FF00ECA697 /* UIImage+StuForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = A16932C41D6031FF00ECA697 /* UIImage+StuForceDecode.m */; };
 		A16932C61D6031FF00ECA697 /* UIImage+StuForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = A16932C41D6031FF00ECA697 /* UIImage+StuForceDecode.m */; };
@@ -86,6 +90,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				A143F7641D4CA3B400F0018D /* SDImageStudy.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A157A27A1D85340F00C22CE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A157A27F1D85340F00C22CE2 /* AFNStudy.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +165,11 @@
 		A143F77A1D4DD7FE00F0018D /* StuImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuImageCache.h; sourceTree = "<group>"; };
 		A143F77B1D4DD7FE00F0018D /* StuImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuImageCache.m; sourceTree = "<group>"; };
 		A143F77E1D4DF05100F0018D /* te12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = te12.jpg; sourceTree = "<group>"; };
+		A157A2741D85255E00C22CE2 /* WeakStrongStudy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakStrongStudy.h; sourceTree = "<group>"; };
+		A157A2751D85255E00C22CE2 /* WeakStrongStudy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakStrongStudy.m; sourceTree = "<group>"; };
+		A157A27C1D85340F00C22CE2 /* libAFNStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNStudy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A157A27E1D85340F00C22CE2 /* AFNStudy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNStudy.h; sourceTree = "<group>"; };
+		A157A2801D85340F00C22CE2 /* AFNStudy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNStudy.m; sourceTree = "<group>"; };
 		A16932C11D60308800ECA697 /* fff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fff.png; sourceTree = "<group>"; };
 		A16932C31D6031FF00ECA697 /* UIImage+StuForceDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StuForceDecode.h"; sourceTree = "<group>"; };
 		A16932C41D6031FF00ECA697 /* UIImage+StuForceDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StuForceDecode.m"; sourceTree = "<group>"; };
@@ -217,6 +236,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A157A2791D85340F00C22CE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A17120F51D51A50E00DE6F83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +294,7 @@
 				A17120F91D51A50E00DE6F83 /* StuZipLib */,
 				A17387021D7BBA9300A37840 /* BlockStudyLib */,
 				A17387101D7C028800A37840 /* URLStudy */,
+				A157A27D1D85340F00C22CE2 /* AFNStudy */,
 				A143F7281D4CA22D00F0018D /* Products */,
 				96F1C86277C53FB959813E00 /* Pods */,
 				9F26B4DBB848E827EB3EB8EA /* Frameworks */,
@@ -284,6 +311,7 @@
 				A17120F81D51A50E00DE6F83 /* libStuZipLib.a */,
 				A17387011D7BBA9300A37840 /* libBlockStudyLib.a */,
 				A173870F1D7C028800A37840 /* libURLStudy.a */,
+				A157A27C1D85340F00C22CE2 /* libAFNStudy.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -385,6 +413,15 @@
 			path = CoreStudy;
 			sourceTree = "<group>";
 		};
+		A157A27D1D85340F00C22CE2 /* AFNStudy */ = {
+			isa = PBXGroup;
+			children = (
+				A157A27E1D85340F00C22CE2 /* AFNStudy.h */,
+				A157A2801D85340F00C22CE2 /* AFNStudy.m */,
+			);
+			path = AFNStudy;
+			sourceTree = "<group>";
+		};
 		A17120F91D51A50E00DE6F83 /* StuZipLib */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +436,8 @@
 			children = (
 				A17387031D7BBA9300A37840 /* BlockStudyLib.h */,
 				A17387051D7BBA9300A37840 /* BlockStudyLib.m */,
+				A157A2741D85255E00C22CE2 /* WeakStrongStudy.h */,
+				A157A2751D85255E00C22CE2 /* WeakStrongStudy.m */,
 			);
 			path = BlockStudyLib;
 			sourceTree = "<group>";
@@ -490,6 +529,23 @@
 			productReference = A143F7611D4CA3B400F0018D /* libSDImageStudy.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A157A27B1D85340F00C22CE2 /* AFNStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A157A2841D85340F00C22CE2 /* Build configuration list for PBXNativeTarget "AFNStudy" */;
+			buildPhases = (
+				A157A2781D85340F00C22CE2 /* Sources */,
+				A157A2791D85340F00C22CE2 /* Frameworks */,
+				A157A27A1D85340F00C22CE2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNStudy;
+			productName = AFNStudy;
+			productReference = A157A27C1D85340F00C22CE2 /* libAFNStudy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A17120F71D51A50E00DE6F83 /* StuZipLib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A17121001D51A50E00DE6F83 /* Build configuration list for PBXNativeTarget "StuZipLib" */;
@@ -568,6 +624,10 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = WRM5754N86;
 					};
+					A157A27B1D85340F00C22CE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WRM5754N86;
+					};
 					A17120F71D51A50E00DE6F83 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = WRM5754N86;
@@ -602,6 +662,7 @@
 				A17120F71D51A50E00DE6F83 /* StuZipLib */,
 				A17387001D7BBA9300A37840 /* BlockStudyLib */,
 				A173870E1D7C028800A37840 /* URLStudy */,
+				A157A27B1D85340F00C22CE2 /* AFNStudy */,
 			);
 		};
 /* End PBXProject section */
@@ -703,6 +764,7 @@
 				A143F72F1D4CA22D00F0018D /* AppDelegate.m in Sources */,
 				A173871B1D7C02B500A37840 /* URLSwiftStudy.swift in Sources */,
 				A16932C91D6049D300ECA697 /* StuWebImageManager.m in Sources */,
+				A157A2761D85255E00C22CE2 /* WeakStrongStudy.m in Sources */,
 				A173870A1D7BBABC00A37840 /* BlockStudyLib.m in Sources */,
 				A171211D1D55C0FA00DE6F83 /* UIImage+stuGIF.m in Sources */,
 				A17121031D51CDC500DE6F83 /* StuZipLib.m in Sources */,
@@ -750,6 +812,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A157A2781D85340F00C22CE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A157A2811D85340F00C22CE2 /* AFNStudy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A17120F41D51A50E00DE6F83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -762,6 +832,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A157A2771D85255E00C22CE2 /* WeakStrongStudy.m in Sources */,
 				A17387061D7BBA9300A37840 /* BlockStudyLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -982,6 +1053,24 @@
 			};
 			name = Release;
 		};
+		A157A2821D85340F00C22CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A157A2831D85340F00C22CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		A17120FE1D51A50E00DE6F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1091,6 +1180,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A157A2841D85340F00C22CE2 /* Build configuration list for PBXNativeTarget "AFNStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A157A2821D85340F00C22CE2 /* Debug */,
+				A157A2831D85340F00C22CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A17121001D51A50E00DE6F83 /* Build configuration list for PBXNativeTarget "StuZipLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1107,6 +1204,7 @@
 				A17387081D7BBA9300A37840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A17387151D7C028800A37840 /* Build configuration list for PBXNativeTarget "URLStudy" */ = {
 			isa = XCConfigurationList;
@@ -1115,6 +1213,7 @@
 				A17387171D7C028800A37840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

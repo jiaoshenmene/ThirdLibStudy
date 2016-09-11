@@ -25,7 +25,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window.rootViewController = [[SDImageStudy alloc] init];
-//    [[BlockStudyLib alloc] init];
+    BlockStudyLib *study =  [[BlockStudyLib alloc] init];
+    [study startMethod];
 //    [BlockStudyLib startBlock];
 //     [[URLStudy alloc] init];
     return YES;
