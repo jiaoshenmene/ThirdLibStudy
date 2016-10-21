@@ -11,8 +11,9 @@
 #import "StuZipLib.h"
 #import "BlockStudyLib.h"
 #import "URLStudy.h"
+#import "AFNStudy.h"
 
-
+#import "ZipLib.h"
 
 
 @interface AppDelegate ()
@@ -25,10 +26,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window.rootViewController = [[SDImageStudy alloc] init];
-    BlockStudyLib *study =  [[BlockStudyLib alloc] init];
-    [study startMethod];
+//    [AFNStudy startStudy];
+//    BlockStudyLib *study =  [[BlockStudyLib alloc] init];
+//    [study startMethod];
 //    [BlockStudyLib startBlock];
 //     [[URLStudy alloc] init];
+    
+    [ZipLib startZip];
     return YES;
 }
 

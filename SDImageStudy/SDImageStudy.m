@@ -28,6 +28,8 @@
 @property (nonatomic , strong) UITableView *tableview;
 
 @property (nonatomic , strong) NSMutableArray *objects;
+
+//@property ()
 @end
 
 @implementation SDImageStudy
@@ -37,11 +39,16 @@
     [super viewDidLoad];
     
     
+    NSLog(@"<<  =  %d",4 % 3);
     
+    UILabel *label  = [[UILabel alloc] initWithFrame:CGRectMake(100, 200, 10, 10)];
     
+    label.backgroundColor = [UIColor grayColor];
+    label.numberOfLines = 1;
+    label.font = [UIFont systemFontOfSize:20];
+    [self.view addSubview:label];
     
-    
-    
+    label.text = @"S";
     
     
 //    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fff" ofType:@"png"]];
@@ -54,45 +61,45 @@
     /*
      
      */
-    NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] objectAtIndex:0];
-    
-    NSURL *newUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@123.png",url ]];
-//    [data writeToURL:newUrl atomically:YES];
-    
-    NSURL *referenceURL = newUrl.fileReferenceURL;
-    
-    NSURL *toURl = [NSURL URLWithString:[NSString stringWithFormat:@"%@/1235.png",url ]];
-    
-    
-    NSURL *bookmarkUrl =  [NSURL URLWithString:[NSString stringWithFormat:@"%@/987.png",url ]];
-//    [[NSFileManager defaultManager] moveItemAtURL:referenceURL toURL:toURl error:nil];
-    
-
-    
-    NSLog(@"%@",url);
-    NSLog(@"newUrl = %@",newUrl);
-    NSData *data1 = [toURl bookmarkDataWithOptions:NSURLBookmarkCreationSuitableForBookmarkFile includingResourceValuesForKeys:nil relativeToURL:nil error:nil];
-    [NSURL writeBookmarkData:data1 toURL:bookmarkUrl options:0 error:nil];
-    
-    
-    NSURL *newBookmarkUrl = [NSURL URLByResolvingBookmarkData:data1 options:NSURLBookmarkResolutionWithoutUI relativeToURL:nil bookmarkDataIsStale:nil error:nil];
-
-    
-    UIImage *newImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:newBookmarkUrl options:NSDataReadingMappedIfSafe error:nil]];
-    UIImage *newImage1 = [UIImage imageWithData:data1];
-    
-    
-//
+//    NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] objectAtIndex:0];
+//    
+//    NSURL *newUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@123.png",url ]];
+////    [data writeToURL:newUrl atomically:YES];
+//    
+//    NSURL *referenceURL = newUrl.fileReferenceURL;
+//    
+//    NSURL *toURl = [NSURL URLWithString:[NSString stringWithFormat:@"%@/1235.png",url ]];
+//    
+//    
+//    NSURL *bookmarkUrl =  [NSURL URLWithString:[NSString stringWithFormat:@"%@/987.png",url ]];
+////    [[NSFileManager defaultManager] moveItemAtURL:referenceURL toURL:toURl error:nil];
+//    
 //
 //    
-////    StuImageCache *cache = [StuImageCache getInstance];
-////    [cache storeImageDataToDisk:data forKey:@"https://s3.amazonaws.com/fast-image-cache/demo-images/FICDDemoImage002.jpg"];
-//    UIImage *image = [[UIImage alloc] init];//[cache diskImageForKey:@"gifdemo@2x.gif"];
+//    NSLog(@"%@",url);
+//    NSLog(@"newUrl = %@",newUrl);
+//    NSData *data1 = [toURl bookmarkDataWithOptions:NSURLBookmarkCreationSuitableForBookmarkFile includingResourceValuesForKeys:nil relativeToURL:nil error:nil];
+//    [NSURL writeBookmarkData:data1 toURL:bookmarkUrl options:0 error:nil];
+//    
+//    
+//    NSURL *newBookmarkUrl = [NSURL URLByResolvingBookmarkData:data1 options:NSURLBookmarkResolutionWithoutUI relativeToURL:nil bookmarkDataIsStale:nil error:nil];
+//
+//    
+//    UIImage *newImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:newBookmarkUrl options:NSDataReadingMappedIfSafe error:nil]];
+//    UIImage *newImage1 = [UIImage imageWithData:data1];
+//    
+//    
 ////
-////    [image sd_study_setImageWithUR];
-    UIImageView *imageview = [[UIImageView alloc] initWithImage:newImage];
-    imageview.frame = CGRectMake(10, 10, 100, 100);
-    [self.view addSubview:imageview];
+////
+////    
+//////    StuImageCache *cache = [StuImageCache getInstance];
+//////    [cache storeImageDataToDisk:data forKey:@"https://s3.amazonaws.com/fast-image-cache/demo-images/FICDDemoImage002.jpg"];
+////    UIImage *image = [[UIImage alloc] init];//[cache diskImageForKey:@"gifdemo@2x.gif"];
+//////
+//////    [image sd_study_setImageWithUR];
+//    UIImageView *imageview = [[UIImageView alloc] initWithImage:newImage];
+//    imageview.frame = CGRectMake(10, 10, 100, 100);
+//    [self.view addSubview:imageview];
 //
 ////
 //    [imageview sd_study_setImageWithURL:[NSURL URLWithString:@"https://s3.amazonaws.com/fast-image-cache/demo-images/FICDDemoImage001.jpg"] placeholderImage:nil options:0];

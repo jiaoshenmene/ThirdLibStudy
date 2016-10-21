@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIImageView+WebCache.h>
-#import <SDWebImageManager.h>
+#import "UIImageView+WebCache.h"
+#import "SDWebImageManager.h"
 #import "StuWebImageManager.h"
 #import "StuImageCache.h"
 
